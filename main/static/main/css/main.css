@@ -1,0 +1,66 @@
+body {
+    background: pink;
+    background-image: url('../img/img12345.jpg');
+    background-size: 350%;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside h3 {
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: red;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: left;
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+    width: 65%;
+}
+
+main .features h1 {font-size: 40px;}
+main .features p {max-width: 600px; margin: 20px auto}
+
+.alert-info {
+    color: black;
+    float: left;
+    clear: both;
+    width: 500px;
+    margin: 10px 34%;
+    text-align: left;
+}
+
+form {
+    margin-left: 32%;
+    width: 450px;
+    margin-top: 10px;
+    length: 10px;
+    padding: 0.5%;
+}

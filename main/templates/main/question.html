@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Вопросы{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Вопросы</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.name }}<br>
+            {{ form.last_name }}<br>
+            {{ form.city }}<br>
+            {{ form.date }}<br>
+            {{ form.text }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Добавить ответ</button>
+        </form>
+    </div>
+{% endblock %}

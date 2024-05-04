@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Ответ{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.name }}</p>
+        <p>{{ page.last_name }}</p>
+        <p>{{ page.date }}</p>
+        <p>{{ page.text }}</p>
+        <a href="{% url 'page-delete' page.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'page-update' page.id %}" class="btn btn-info">Редактировать</a>
+    </div>
+{% endblock %}

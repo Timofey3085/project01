@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Ответ{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Готовые анкеты</h1>
+        {% for el in survey %}
+        <div class="alert alert-info">
+            <h3>{{ el.title }}</h3>
+            <p><b>Имя:</b> {{ el.name }}</p>
+            <p><b>Фамилия:</b> {{ el.last_name }}</p>
+            <p><b>Город:</b> {{ el.city }}</p>
+            <p><b>Дата создания:</b> {{ el.date }}</p>
+            <p><b>Биография:</b><i> {{ el.text }}</i></p>
+            <a href="{% url 'page-detail' el.id %}" class="btn btn-primary">Показать все</a>
+            <a href="{% url 'page-delete' el.id %}" class="btn btn-danger">Удалить</a>
+            <a href="{% url 'page-update' el.id %}" class="btn btn-info">Редактировать</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
