@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
-from .models import Survey, Question
-from .forms import QuestionForm
 from django.views.generic import DetailView, UpdateView, DeleteView
+
+from .forms import QuestionForm
+from .models import Survey
 
 
 class PageDetailView(DetailView):

@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import TextInput, DateTimeInput, Textarea
 
-from .models import Question, Survey
+from .models import Survey
 
 
 class QuestionForm(forms.ModelForm):
